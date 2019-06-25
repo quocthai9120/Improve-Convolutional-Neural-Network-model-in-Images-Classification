@@ -1,5 +1,4 @@
 # Improve-Convolutional-Neural-Network-model-in-Images-Classification
-Experimenting different methods to improve the CNN model in Image Classification task
 
 This project is done based on the result from the final research project in the CSE163 course from University of Washington about Using different models in Image Classification. The link below gives more information about that research project: https://github.com/quocthai9120/Images-Classification.
 
