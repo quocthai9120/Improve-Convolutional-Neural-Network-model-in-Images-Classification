@@ -1,4 +1,4 @@
-#CODES-for-running-the-project
+# CODES for running the project
 
 There are three files contain the codes for this project:
   + the cifar_10_data_preprocessing.py file to initialize data.
