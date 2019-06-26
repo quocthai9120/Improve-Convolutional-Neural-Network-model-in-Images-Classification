@@ -157,6 +157,7 @@ def check_predictions_probability(model, x_test, y_test, label_names,
                   + str(label_names[int(np.where(y_test[i] == 1)[0])]))
         plt.savefig('CNN prediction probability instance ' + str(i) + '.png',
                     bbox_inches='tight')
+    plt.show()
 
 
 def main():
@@ -242,6 +243,11 @@ def main():
     )
     print('   Model accuracy for testing data:', str(scores[1] * 100) + '%')
     print()
+
+    # visualize predictions
+    y_pred = model.predict_classes(x_test_standardization)
+    visualize_images(x_test, y_test, label_names, y_pred,
+                     cols=8, rows=8, fontsize=8)
 
     # check predictions probability
     sns.set()
